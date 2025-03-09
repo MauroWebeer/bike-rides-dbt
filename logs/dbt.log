@@ -1,0 +1,231 @@
+[0m12:25:09.718475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b68d1812ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b68d1b16c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b68d1490d70>]}
+
+
+============================== 12:25:09.722804 | 9da32ad0-8a00-4bcf-aebb-2ecfd30e3e41 ==============================
+[0m12:25:09.722804 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:25:09.723871 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/weber/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init bike_ride_project', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:25:09.739735 [debug] [MainThread]: Starter project path: /home/weber/Documents/bike_project/dbt_venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m12:25:09.743380 [info ] [MainThread]: 
+Your new dbt project "bike_ride_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:25:09.743994 [info ] [MainThread]: Setting up your profile.
+[0m12:26:18.289969 [info ] [MainThread]: Profile bike_ride_project written to /home/weber/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:26:18.291432 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 68.663315, "process_in_blocks": "32", "process_kernel_time": 0.149182, "process_mem_max_rss": "93828", "process_out_blocks": "80", "process_user_time": 1.325731}
+[0m12:26:18.292167 [debug] [MainThread]: Command `dbt init` succeeded at 12:26:18.292000 after 68.66 seconds
+[0m12:26:18.292771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b68d1392210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b68d1586870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b68d0d5cd10>]}
+[0m12:26:18.293411 [debug] [MainThread]: Flushing usage events
+[0m12:26:18.946259 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:26:30.319421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7588afa59670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7588ae4b15b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7588ae2449e0>]}
+
+
+============================== 12:26:30.323662 | f35aae55-9385-402f-b89c-80dd95799337 ==============================
+[0m12:26:30.323662 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:26:30.324549 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/weber/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:26:30.338108 [info ] [MainThread]: dbt version: 1.9.3
+[0m12:26:30.338688 [info ] [MainThread]: python version: 3.12.3
+[0m12:26:30.339179 [info ] [MainThread]: python path: /home/weber/Documents/bike_project/dbt_venv/bin/python3
+[0m12:26:30.339647 [info ] [MainThread]: os info: Linux-6.11.0-19-generic-x86_64-with-glibc2.39
+[0m12:26:30.409976 [info ] [MainThread]: Using profiles dir at /home/weber/.dbt
+[0m12:26:30.410405 [info ] [MainThread]: Using profiles.yml file at /home/weber/.dbt/profiles.yml
+[0m12:26:30.410737 [info ] [MainThread]: Using dbt_project.yml file at /home/weber/Documents/bike_project/dbt_project.yml
+[0m12:26:30.411139 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:26:30.412086 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.18422304, "process_in_blocks": "0", "process_kernel_time": 0.129742, "process_mem_max_rss": "92584", "process_out_blocks": "16", "process_user_time": 1.371281}
+[0m12:26:30.412842 [debug] [MainThread]: Command `dbt debug` failed at 12:26:30.412639 after 0.19 seconds
+[0m12:26:30.414658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7588ae316420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7588b15fe3f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7588add79250>]}
+[0m12:26:30.416092 [debug] [MainThread]: Flushing usage events
+[0m12:26:31.025565 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:27:44.802874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77390b38fe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77390bade6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77390c6a3e00>]}
+
+
+============================== 12:27:44.807097 | 12a2c37b-50cb-4746-9f15-4912621c1716 ==============================
+[0m12:27:44.807097 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:27:44.807883 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/weber/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m12:27:44.820366 [info ] [MainThread]: dbt version: 1.9.3
+[0m12:27:44.820959 [info ] [MainThread]: python version: 3.12.3
+[0m12:27:44.821441 [info ] [MainThread]: python path: /home/weber/Documents/bike_project/dbt_venv/bin/python3
+[0m12:27:44.821926 [info ] [MainThread]: os info: Linux-6.11.0-19-generic-x86_64-with-glibc2.39
+[0m12:27:44.894040 [info ] [MainThread]: Using profiles dir at /home/weber/.dbt
+[0m12:27:44.894484 [info ] [MainThread]: Using profiles.yml file at /home/weber/.dbt/profiles.yml
+[0m12:27:44.894859 [info ] [MainThread]: Using dbt_project.yml file at /home/weber/Documents/bike_project/dbt_project.yml
+[0m12:27:44.895267 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:27:44.896204 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.18297961, "process_in_blocks": "0", "process_kernel_time": 0.132617, "process_mem_max_rss": "92748", "process_out_blocks": "16", "process_user_time": 1.333152}
+[0m12:27:44.896689 [debug] [MainThread]: Command `dbt debug` failed at 12:27:44.896574 after 0.18 seconds
+[0m12:27:44.897216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77390fbaf710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77390c6a3e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77390c81a870>]}
+[0m12:27:44.897849 [debug] [MainThread]: Flushing usage events
+[0m12:27:45.542742 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:28:36.085905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6c2d13e6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6c2ca77f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6c2d0faf90>]}
+
+
+============================== 12:28:36.090045 | 98eb5184-8f55-4875-9482-305ec5b296f0 ==============================
+[0m12:28:36.090045 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:28:36.090810 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/weber/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:28:36.104230 [info ] [MainThread]: dbt version: 1.9.3
+[0m12:28:36.104829 [info ] [MainThread]: python version: 3.12.3
+[0m12:28:36.105316 [info ] [MainThread]: python path: /home/weber/Documents/bike_project/dbt_venv/bin/python3
+[0m12:28:36.105819 [info ] [MainThread]: os info: Linux-6.11.0-19-generic-x86_64-with-glibc2.39
+[0m12:28:36.177955 [info ] [MainThread]: Using profiles dir at /home/weber/.dbt
+[0m12:28:36.178397 [info ] [MainThread]: Using profiles.yml file at /home/weber/.dbt/profiles.yml
+[0m12:28:36.178744 [info ] [MainThread]: Using dbt_project.yml file at /home/weber/Documents/bike_project/dbt_project.yml
+[0m12:28:36.179156 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:28:36.180068 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.18340608, "process_in_blocks": "0", "process_kernel_time": 0.126488, "process_mem_max_rss": "92324", "process_out_blocks": "8", "process_user_time": 1.419256}
+[0m12:28:36.180570 [debug] [MainThread]: Command `dbt debug` failed at 12:28:36.180433 after 0.18 seconds
+[0m12:28:36.181004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6c2d6a1d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6c2cad05f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6c2ce9cbc0>]}
+[0m12:28:36.181618 [debug] [MainThread]: Flushing usage events
+[0m12:28:36.815312 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:29:17.705138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794faf527680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794faf9166c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794faf96b710>]}
+
+
+============================== 12:29:17.709533 | f1a3d969-14c5-444b-880e-67fc2ceb18c1 ==============================
+[0m12:29:17.709533 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:29:17.710337 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/weber/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init bike_ride_project', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:29:17.721486 [info ] [MainThread]: A project called bike_ride_project already exists here.
+[0m12:29:17.722743 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.11615916, "process_in_blocks": "0", "process_kernel_time": 0.107687, "process_mem_max_rss": "88240", "process_out_blocks": "16", "process_user_time": 1.308204}
+[0m12:29:17.723392 [debug] [MainThread]: Command `dbt init` succeeded at 12:29:17.723242 after 0.12 seconds
+[0m12:29:17.723918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794faf527680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794fae2afbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794fae522630>]}
+[0m12:29:17.724838 [debug] [MainThread]: Flushing usage events
+[0m12:29:18.358462 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:29:42.623361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e16ddabef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e16e6bc9e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e16f7ceba0>]}
+
+
+============================== 12:29:42.627507 | 64e5f872-ec07-4781-8a88-5b9029a59fc9 ==============================
+[0m12:29:42.627507 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:29:42.628280 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/weber/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init bike_ride_project', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:29:42.640980 [debug] [MainThread]: Starter project path: /home/weber/Documents/bike_project/dbt_venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m12:29:42.644640 [info ] [MainThread]: 
+Your new dbt project "bike_ride_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:29:42.645260 [info ] [MainThread]: Setting up your profile.
+[0m12:30:36.836830 [info ] [MainThread]: Profile bike_ride_project written to /home/weber/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:30:36.838282 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 54.305573, "process_in_blocks": "0", "process_kernel_time": 0.125844, "process_mem_max_rss": "93908", "process_out_blocks": "80", "process_user_time": 1.364316}
+[0m12:30:36.838991 [debug] [MainThread]: Command `dbt init` succeeded at 12:30:36.838805 after 54.31 seconds
+[0m12:30:36.839520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e16e305730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e16f7ceba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e16e2425a0>]}
+[0m12:30:36.840134 [debug] [MainThread]: Flushing usage events
+[0m12:30:37.474178 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:30:42.272941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802eaf8fa40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802eb82f470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802eb774bf0>]}
+
+
+============================== 12:30:42.277003 | 1bfc9608-0eef-414a-b87c-d51fcd3d1e5b ==============================
+[0m12:30:42.277003 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:30:42.277748 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/weber/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m12:30:42.290049 [info ] [MainThread]: dbt version: 1.9.3
+[0m12:30:42.290630 [info ] [MainThread]: python version: 3.12.3
+[0m12:30:42.291116 [info ] [MainThread]: python path: /home/weber/Documents/bike_project/dbt_venv/bin/python3
+[0m12:30:42.291590 [info ] [MainThread]: os info: Linux-6.11.0-19-generic-x86_64-with-glibc2.39
+[0m12:30:42.361969 [info ] [MainThread]: Using profiles dir at /home/weber/.dbt
+[0m12:30:42.362406 [info ] [MainThread]: Using profiles.yml file at /home/weber/.dbt/profiles.yml
+[0m12:30:42.362752 [info ] [MainThread]: Using dbt_project.yml file at /home/weber/Documents/bike_project/dbt_project.yml
+[0m12:30:42.363169 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:30:42.364084 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.18039528, "process_in_blocks": "0", "process_kernel_time": 0.128771, "process_mem_max_rss": "92844", "process_out_blocks": "0", "process_user_time": 1.305683}
+[0m12:30:42.364654 [debug] [MainThread]: Command `dbt debug` failed at 12:30:42.364518 after 0.18 seconds
+[0m12:30:42.365644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802eaea4d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802ecd07530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7802eb31fda0>]}
+[0m12:30:42.367315 [debug] [MainThread]: Flushing usage events
+[0m12:30:42.990961 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:32:55.651599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7157ce249ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7157ce709850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7157ce24b980>]}
+
+
+============================== 12:32:55.655900 | c12c4bde-02eb-420e-85da-b5b5f8277883 ==============================
+[0m12:32:55.655900 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:32:55.656905 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/weber/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:32:55.669796 [info ] [MainThread]: dbt version: 1.9.3
+[0m12:32:55.670466 [info ] [MainThread]: python version: 3.12.3
+[0m12:32:55.671021 [info ] [MainThread]: python path: /home/weber/Documents/bike_project/dbt_venv/bin/python3
+[0m12:32:55.671533 [info ] [MainThread]: os info: Linux-6.11.0-19-generic-x86_64-with-glibc2.39
+[0m12:32:55.739455 [info ] [MainThread]: Using profiles dir at /home/weber/.dbt
+[0m12:32:55.739947 [info ] [MainThread]: Using profiles.yml file at /home/weber/.dbt/profiles.yml
+[0m12:32:55.740448 [info ] [MainThread]: Using dbt_project.yml file at /home/weber/Documents/bike_project/dbt_project.yml
+[0m12:32:55.741137 [info ] [MainThread]: adapter type: postgres
+[0m12:32:55.741621 [info ] [MainThread]: adapter version: 1.9.0
+[0m12:32:55.742154 [info ] [MainThread]: Configuration:
+[0m12:32:55.742545 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:32:55.742978 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:32:55.743555 [info ] [MainThread]: Required dependencies:
+[0m12:32:55.744875 [debug] [MainThread]: Executing "git --help"
+[0m12:32:55.765571 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:32:55.766187 [debug] [MainThread]: STDERR: "b''"
+[0m12:32:55.766641 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:32:55.767144 [info ] [MainThread]: Connection:
+[0m12:32:55.767612 [info ] [MainThread]:   host: localhost
+[0m12:32:55.768079 [info ] [MainThread]:   port: 5432
+[0m12:32:55.768523 [info ] [MainThread]:   user: dbt_user
+[0m12:32:55.769044 [info ] [MainThread]:   database: bike_ride_project
+[0m12:32:55.769490 [info ] [MainThread]:   schema: public
+[0m12:32:55.769965 [info ] [MainThread]:   connect_timeout: 10
+[0m12:32:55.770398 [info ] [MainThread]:   role: None
+[0m12:32:55.770866 [info ] [MainThread]:   search_path: None
+[0m12:32:55.771295 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:32:55.771779 [info ] [MainThread]:   sslmode: None
+[0m12:32:55.772213 [info ] [MainThread]:   sslcert: None
+[0m12:32:55.772626 [info ] [MainThread]:   sslkey: None
+[0m12:32:55.773051 [info ] [MainThread]:   sslrootcert: None
+[0m12:32:55.773507 [info ] [MainThread]:   application_name: dbt
+[0m12:32:55.774038 [info ] [MainThread]:   retries: 1
+[0m12:32:55.774657 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m12:32:55.854068 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:32:55.881668 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:32:55.882073 [debug] [MainThread]: On debug: select 1 as id
+[0m12:32:55.882394 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:32:55.894309 [debug] [MainThread]: SQL status: SELECT 1 in 0.012 seconds
+[0m12:32:55.895383 [debug] [MainThread]: On debug: Close
+[0m12:32:55.895824 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:32:55.896269 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:32:55.896820 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/weber/Documents/bike_project/dbt_project.yml> not found
+
+[0m12:32:55.898051 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.33498406, "process_in_blocks": "264", "process_kernel_time": 0.173795, "process_mem_max_rss": "102292", "process_out_blocks": "16", "process_user_time": 1.386365}
+[0m12:32:55.898543 [debug] [MainThread]: Command `dbt debug` failed at 12:32:55.898429 after 0.34 seconds
+[0m12:32:55.898954 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:32:55.899374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7157d19ff2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7157ce33aed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7157ce339c70>]}
+[0m12:32:55.900132 [debug] [MainThread]: Flushing usage events
+[0m12:32:56.545710 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:59:30.195666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bac73dd310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bac8f6b1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bac73aade0>]}
+
+
+============================== 13:59:30.206226 | f39526e7-b9c8-418e-b527-be57f68863c2 ==============================
+[0m13:59:30.206226 [info ] [MainThread]: Running with dbt=1.9.3
+[0m13:59:30.206958 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/weber/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:59:30.207601 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/weber/Documents/bike_project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:59:30.208860 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.086420015, "process_in_blocks": "272", "process_kernel_time": 0.171239, "process_mem_max_rss": "90628", "process_out_blocks": "16", "process_user_time": 1.692478}
+[0m13:59:30.209572 [debug] [MainThread]: Command `dbt run` failed at 13:59:30.209430 after 0.09 seconds
+[0m13:59:30.210099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bac75a2b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bac78479b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72bac7c963c0>]}
+[0m13:59:30.210686 [debug] [MainThread]: Flushing usage events
+[0m13:59:30.848029 [debug] [MainThread]: An error was encountered while trying to flush usage events

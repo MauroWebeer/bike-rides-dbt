@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: bike_ride_project  # Name of the schema where your tables are located
+    schema: public    # PostgreSQL schema (usually 'public')
+    tables:
+      - name: rides   
+      - name: payments 
+      - name: users
+      - name: bikes
